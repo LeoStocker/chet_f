@@ -16,6 +16,9 @@ def add_file(filename, chat):
 		for c in chat:
 			f.write(c)
 
-read_file('input.txt')
-print(read_file('input.txt'))
-add_file('output.txt', read_file('input.txt'))
+def main():
+	read_file('input.txt')
+	print(read_file('input.txt'))
+	add_file('output.txt', read_file('input.txt'))
+
+main()
